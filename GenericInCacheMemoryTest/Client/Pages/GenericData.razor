@@ -1,0 +1,77 @@
+﻿@page "/fetchgdata"
+@inject HttpClient Http
+
+<PageTitle>Generic Data</PageTitle>
+
+
+<br />
+
+    @if (genericList == null)
+    {
+        <p> Loading.......</p>
+    }
+    else if(genericList.Count() == 0)
+    {
+        <p> No Records Found .......</p>
+    }
+    else
+    {
+        <div class="container" sytle="border:1px solid Blue;">
+            <h7 class="mainheading">
+                Generic Cache List
+            </h7>
+            <br>
+            <div class="row">
+                <div class="col-md-auto">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="tablehead">MY Property 1</th>
+                                <th class="tablehead">My Property 2</th>
+                                <th class="tablehead">My Property 3</th>
+                                <th class="tablehead">My Property 4</th>
+                            </tr>
+                        </thead>
+                <tbody>
+                    @foreach (var le in genericList)
+                    {
+                        <tr>
+                            <td>@le.MyProperty1</td>
+                            <td>@le.MyProperty2</td>
+                            <td>@le.MyProperty3</td>
+                            <td>@le.MyProperty4</td>
+                        </tr>
+                    }
+                </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    }
+
+
+<style>
+    .mainheading {
+        color: darkcyan;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        text-align: left
+    }
+
+    .tablehead {
+        color: deepskyblue;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        text-align: center;
+        border: 2px solid blue;
+        background-color: lightblue
+    }
+
+    .td {
+        background-color: lightcyan;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Arial Rounded MT'
+    }
+</style>

@@ -1,0 +1,106 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="row">
+    <div class="column">
+        <h1 style="color:darkgoldenrod; font-family:'Times New Roman', Times, serif; font-weight:bolder; border:4px solid powderblue; text-align:center">
+            FINBOURNE Coding Exercise
+        </h1>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="column">
+        <p style="color:Blue; font-family:'Times New Roman', Times, serif; text-align:left">
+            Introduction
+        </p>
+        <p style="color:black; font-family:'Times New Roman', Times, serif; text-align:justify">
+            We invite you to complete this short coding exercise! This problem is designed to be representative
+            of the kind of tasks we work on at FINBOURNE, and gives you an opportunity to demonstrate your
+            practical coding ability.
+        </p>
+        <p style="color:blue; font-family:'Times New Roman', Times, serif; text-align:left">
+            The Objective
+        </p>
+        <p style="color:darkslategrey; font-family:'Times New Roman', Times, serif; text-align:left">
+            Background
+        </p>
+        <p style="color:black; font-family:'Times New Roman', Times, serif; text-align:justify">
+            Our application – LUSID – handles large volumes of data, and also needs to be fast. One strategy to
+            improve the execution speed of our code is to cache regularly-used data in memory.
+        </p>
+        <br />
+        <p style="color:darkslategrey; font-family:'Times New Roman', Times, serif; text-align:left">
+            Task
+        </p>
+        <p style="color:black; font-family:'Times New Roman', Times, serif; text-align:justify">
+            You have been asked to create a generic in-memory cache component, which other FINBOURNE
+            developers can use in their applications.
+
+            This component should be able to store arbitrary types of objects, which are added and retrieved
+            using a unique key (similar to a dictionary).
+            To avoid the risk of running out of memory, the cache will need to have a configurable threshold for
+            the maximum number of items which it can hold at any one time. If the cache becomes full, any
+            attempts to add additional items should succeed, but will result in another item in the cache being
+            evicted. The cache should implement the ‘least recently used’ approach when selecting which item
+            to evict.
+
+            The cache component is intended to be used as a singleton. As such, you should ideally make your
+            component thread-safe for all methods, but you can skip this feature if you run out of time.
+            Another useful feature would be some kind of mechanism which allows the consumer to know when
+            items get evicted. Again, if you run out of time, you can skip this feature too.
+        </p>
+        <p style="color:darkslategrey; font-family:'Times New Roman', Times, serif; text-align:left">
+            Constraints
+        </p>
+            <ul>
+            <li>Please write the solution in C# and .NET </li>
+            <li>
+                You may use any .NET framework version you wish
+            </li>
+            <li>You may use any development tools you wish </li>
+            <li>You are permitted to use external libraries (e.g. nuget packages) </li>
+        </ul>
+        <br />
+        <p style="color:darkslategrey; font-family:'Times New Roman', Times, serif; text-align:justify">
+            Note: we appreciate there are cache implementations already available in .NET which could be used
+            ‘off the shelf’ to solve this problem entirely. Whilst we do value pragmatism, please create your own
+            solution, to give you the best opportunity for you to demonstrate your skills.
+            Guidelines.
+        </p>
+        <p style="color:darkblue; font-family:'Times New Roman', Times, serif; text-align:left">
+            Guidelines
+        </p>
+        <p style="color:black; font-family:'Times New Roman', Times, serif; text-align:justify">
+            Please try and write your solution in a similar style to how you would tackle a task in a real working
+            environment.
+            As per our values, we are looking for a solution which is:
+        </p>
+            <ul>
+            <li>Correct</li>
+            <li>High-quality</li>
+            <li>Pragmatic</li>
+            </ul>
+        <p style="color:black; font-family:'Times New Roman', Times, serif; text-align:justify">
+            You are welcome to use any resources you like to help solve the problem, though obviously we
+            expect you to write the code yourself.
+            The task can probably be completed in a few hours, though you’re welcome to take longer if you
+            wish. Please make a note of how long you spent, and include this with your solution. But bear in mind
+            we are more interested in your approach and the quality of your software, as opposed to how fast
+
+            When you are complete, please share your source code with us, in whichever way you find most
+            convenient.
+        </p>
+
+        <br />
+
+
+        <p style="color:darkblue; font-family:'Times New Roman', Times, serif; text-align:left">
+        Good luck!
+        </p>
+    
+    </div>
+</div>
+
+

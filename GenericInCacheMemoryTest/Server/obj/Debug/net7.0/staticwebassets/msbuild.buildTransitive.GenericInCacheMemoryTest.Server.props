@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GenericInCacheMemoryTest.Server.props" />
+</Project>
